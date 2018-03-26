@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 module.exports = {
   entry: {
@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     filename: "[name].js",
-    path: __dirname + '/dist'
+    path: __dirname + "/dist"
   },
   watch: true,
   devServer: {
@@ -15,20 +15,17 @@ module.exports = {
     hot: true
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.(js|vue)$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
-      }
-    ],
     rules: [
       {
+        enforce: "pre",
         test: /\.(js|vue)$/,
         exclude: /node_modules/,
-        use: [
-         "babel-loader"
-        ]
+        loader: "eslint-loader",
+      },
+      {
+        test: /\.(js|vue)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       }
     ]
   },

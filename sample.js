@@ -1,3 +1,3 @@
-document.write('Webpack');
+document.write("Webpack");
 
 console.log("Loaded practice webpack");
