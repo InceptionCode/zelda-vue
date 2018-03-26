@@ -1,0 +1,5 @@
+{
+  "port": 8000,
+  "files": ["./src/**/*.{html,css,js,vue}"],
+  "server": { "baseDir": "./src" }
+}
