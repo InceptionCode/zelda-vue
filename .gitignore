@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# Extended environment
+bs-config.json
+
